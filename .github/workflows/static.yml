@@ -1,0 +1,80 @@
+doctype: html
+html:
+  lang: en
+  head:
+    meta:
+      charset: UTF-8
+    meta:
+      name: viewport
+      content: width=device-width, initial-scale=1.0
+    title: My Medical Information
+    style: |
+      body:
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+      header:
+          background-color: #007bff;
+          color: white;
+          padding: 20px;
+          text-align: center;
+      nav:
+          background-color: #0056b3;
+          color: white;
+          padding: 10px;
+          text-align: center;
+      nav a:
+          color: white;
+          text-decoration: none;
+          padding: 10px 20px;
+      nav a:hover:
+          background-color: #004080;
+      section:
+          padding: 20px;
+      h2:
+          color: #007bff;
+      table:
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+      th, td:
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+      th:
+          background-color: #f2f2f2;
+  body:
+    header:
+        h1: My Medical Information
+    nav:
+        - href: "#personal_info"
+          name: Personal Information
+        - href: "#medical_history"
+          name: Medical History
+        - href: "#medications"
+          name: Medications
+        - href: "#allergies"
+          name: Allergies
+    sections:
+      personal_info:
+        id: personal_info
+        h2: Personal Information
+        table:
+          - Name: Travis (nova) Garvoille
+          - Date of Birth: december 11 1999
+          - Address: 228 w 1300 s apt 223 slc ut 84115
+          - Contact Number: 8014623724
+          - Blood Type: unknown
+      medical_history:
+        id: medical_history
+        h2: Medical History
+        p: asthma, depression, anxiety, anorexia, ptsd, adhd, autism
+      medications:
+        id: medications
+        h2: Medications
+        p: topirimate 25mg bedtime, omeprazole 40mg before breakfast, pantoprazole 20mg daily, spironolactone 100mg bedtime, sucralfate 1g 4x daily, lurasidone 20mg morning, prazosin 2mg night, prazosin 1mg morning, divalproex 500mg daily, quetiapine 100mg bedtime, quetiapine 50mg prn x2 daily
+      allergies:
+        id: allergies
+        h2: Allergies
+        p: cinnamon, sunflower, lamotrigine, benadryl
